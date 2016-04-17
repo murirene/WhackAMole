@@ -1,0 +1,96 @@
+/* Base Application Styles */
+body {
+  color: #000;
+  background: #fff;
+  margin-top: -40px;
+}
+
+.index img {
+  margin: 40px auto;
+  border-radius: 4px;
+  background: #fff;
+  display: block;
+}
+
+.index .notice {
+  margin: 20px auto;
+  padding: 15px 0;
+  text-align: center;
+  border: 1px solid #000;
+  border-width: 1px 0;
+  background: #666;
+}
+
+.main-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.play-btn {
+  flex: 5;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.controlPanel {
+  display: flex;
+  flex-direction: row;
+  margin-top: -23px;
+}
+
+.gameTimer {
+  flex: 1;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 550px;
+  height: 670px;
+  background-color: transparent;
+}
+
+.score {
+  left: 40%;
+  top: 1%;
+  color: #FFFFFF;
+  font: bold;
+  margin: auto;
+  position: absolute;
+}
+
+.wam-header {
+  color: #FFFFFF;
+  background-color: #F56400;
+}
+
+.mole {
+  flex: 1;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.hole {
+  flex: 1;
+  width: 120px;
+  z-index: 40;
+  position: absolute;
+  height: 120px;
+  background: black;
+  -moz-border-radius: 60px;
+  -webkit-border-radius: 60px;
+  border-radius: 60px;
+  margin-top: -168px;
+  margin-left: 16px;
+}
