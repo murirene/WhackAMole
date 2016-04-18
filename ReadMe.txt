@@ -5,9 +5,6 @@ npm: 3.7.3
 *URL:
 http://localhost:3000
 
-*Git:
-https://github.com/murirene/WhackAMole.git
-
 *Dependency Installation
 Inside of the directory run the following command to install the dependencies:
 npm install
