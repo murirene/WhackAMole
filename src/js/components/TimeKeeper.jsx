@@ -28,11 +28,13 @@ let TimerKeeper = React.createClass({
     if(seconds < 10){
       seconds = `0${seconds}`
     }
+
     return <div className="gameTimer">
-      <form className="form-horizontal">
+      <form className="form-horizontal" >
         <Input type="text" label="Time" value={`${minutes}:${seconds}`} labelClassName="col-xs-2" wrapperClassName="col-xs-10" />
       </form>
       </div>
+
   }
 })
 
