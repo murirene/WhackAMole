@@ -1,3 +1,5 @@
+/* React Container binds the Component to the store. */
+
 import { connect } from 'react-redux';
 import { playGame, stopGame } from '../actions/actions';
 import GameButton from '../components/GameButton';

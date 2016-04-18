@@ -1,3 +1,5 @@
+/* Store component of the Redux Unidirectional flow. Mostly boilerplate code.*/
+
 import { applyMiddleware, createStore } from 'redux';
 const reducers = require('../reducers');
 

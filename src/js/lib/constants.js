@@ -1,3 +1,5 @@
+/* Application constants */
+
 export default {
   image: {
     PEEKING_MOLE: '../images/mole.png',

@@ -1,3 +1,5 @@
+/* Application Entry point. Injects the Store and loads the Route. */
+
 import React from 'react';
 import {Router, Route, browserHistory, IndexRoute} from 'react-router';
 import { render } from 'react-dom';

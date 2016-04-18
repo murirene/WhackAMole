@@ -1,11 +1,15 @@
-jest.dontMock('../../src/js/components/GameButton.jsx').default;
+/* Jest Tests for validating the React GameButton. The View component of the Redux
+ * unidirectional flow */
+
+jest.dontMock('../../src/js/components/GameButton').default;
+import consts from '../../src/js/lib/constants';
 
 var TestUtils = require('react-addons-test-utils');
 var React = require('react');
 
 describe("The GameButton", () => {
     it("", () => {
-        let GameButton = require('../../src/js/components/GameButton.jsx').default;
+        let GameButton = require('../../src/js/components/GameButton').default;
 
         let playGameWasCalled = false;
         let stopGameWasCalled = false;
@@ -14,11 +18,11 @@ describe("The GameButton", () => {
         let stopGame = (index)=> {stopGameWasCalled=true};
 
         let PlayComponent = TestUtils.renderIntoDocument(
-            <GameButton game={"stop"} playGame={playGame} stopGame={stopGame}/>
+            <GameButton game={consts.gameState.STOPPED} playGame={playGame} stopGame={stopGame}/>
         );
 
         let StopComponent = TestUtils.renderIntoDocument(
-            <GameButton game={"play"} playGame={playGame} stopGame={stopGame}/>
+            <GameButton game={consts.gameState.PLAYING} playGame={playGame} stopGame={stopGame}/>
         );
 
         TestUtils.Simulate.click(

@@ -1,3 +1,5 @@
+/* Action Type constants */
+
 export const PLAY_GAME = 'PLAY_GAME'
 export const STOP_GAME = 'STOP_GAME'
 export const MOLE_OUT = 'MOLE_OUT'

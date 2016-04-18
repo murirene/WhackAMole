@@ -1,23 +1,26 @@
-jest.dontMock('../../src/js/components/Mole.jsx').default;
+/* Jest Tests for validating the React Mole. The View component of the Redux
+ * unidirectional flow */
+jest.dontMock('../../src/js/components/Mole').default;
+import consts from '../../src/js/lib/constants';
 
 var TestUtils = require('react-addons-test-utils');
 var React = require('react');
 
 describe("The Mole", () => {
-    it("should display the board with moles", () => {
-        let Mole = require('../../src/js/components/Mole.jsx').default;
+    it("should peek, hide and get whacked.", () => {
+        let Mole = require('../../src/js/components/Mole').default;
         var moleWhackedWasCalled = false;
 
-        let score = (index)=> {
+        let score = ()=> {
             moleWhackedWasCalled=true
         };
 
         let PeekingMoleComponent = TestUtils.renderIntoDocument(
-            <Mole mole={"out"} moleWhacked={()=>{}} score={score} moleRecover={()=>{}} />
+            <Mole mole={consts.moleState.PEEKING} moleWhacked={()=>{}} score={score} moleRecover={()=>{}} />
         );
 
         let HiddenMoleComponent = TestUtils.renderIntoDocument(
-            <Mole mole={"hid"} moleWhacked={()=>{}} score={score} moleRecover={()=>{}} />
+            <Mole mole={consts.moleState.HIDDEN} moleWhacked={()=>{}} score={score} moleRecover={()=>{}} />
         );
 
         let PeekingMoledElements = TestUtils.scryRenderedDOMComponentsWithClass(PeekingMoleComponent, 'hole');

@@ -1,3 +1,6 @@
+/* Functional Test. Nightwatch.js, runs on Selenium
+ * Starts the game and hits each mole once. */
+
 module.exports = {
     '@tags': ['test'],
     'Play Whack A Mole': function(browser) {

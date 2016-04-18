@@ -1,3 +1,6 @@
+/* Reducer component of the Redux Unidirectional flow
+* The Reducer is a pure function that will produce a new state as per the incoming Action. */
+
 import { MOLE_HIT, MOLE_OUT, MOLE_HIDE, PLAY_GAME,
   STOP_GAME, START_TIMER, STOP_TIMER, MOLE_RECOVER,
   START_GAME_TIMER, STOP_GAME_TIMER, SET_GAME_TIME,

@@ -1,15 +1,16 @@
-jest.dontMock('../../src/js/components/ScoreBoard.jsx').default;
+/* Jest Tests for validating the React Scoreboard. The View component of the Redux
+ * unidirectional flow */
+jest.dontMock('../../src/js/components/ScoreBoard').default;
 
 var TestUtils = require('react-addons-test-utils');
 var React = require('react');
 
 describe("The ScoreBoard", () => {
-    it("", () => {
-        let ScoreBoard = require('../../src/js/components/ScoreBoard.jsx').default;
-        let hits=10;
+    it("should show no hits, 1 hit, and many hits.", () => {
+        let ScoreBoard = require('../../src/js/components/ScoreBoard').default;
 
-        let ScoreBoardComponent = TestUtils.renderIntoDocument(
-            <ScoreBoard hits={hits} />
+        let ScoreBoardScore10Component = TestUtils.renderIntoDocument(
+            <ScoreBoard hits={10} />
         );
 
         let ScoreBoardScore1Component = TestUtils.renderIntoDocument(
@@ -20,7 +21,7 @@ describe("The ScoreBoard", () => {
             <ScoreBoard hits={0} />
         );
 
-        let ScoreBoardElement = TestUtils.findRenderedDOMComponentWithTag(ScoreBoardComponent, 'h1');
+        let ScoreBoardElement = TestUtils.findRenderedDOMComponentWithTag(ScoreBoardScore10Component, 'h1');
         expect(ScoreBoardElement).toBeDefined();
         expect(ScoreBoardElement.textContent).toEqual('10 Moles Whacked!');
 

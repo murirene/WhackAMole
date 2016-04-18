@@ -1,3 +1,5 @@
+/* GameButton React Component is used toggle the start/stop of the game */
+
 import React from 'react';
 import { Button } from 'react-bootstrap';
 import consts from '../lib/constants';

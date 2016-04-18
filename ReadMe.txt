@@ -1,14 +1,24 @@
-Environment:
+*Environment:
 Node: v5.9.1
 npm: 3.7.3
 
-URL:
-http://localhost:3000/
+*URL:
+http://localhost:3000
 
+*Dependency Installation
 Inside of the directory run the following command to install the dependencies:
 npm install
 
-Also, install Nightwatch.js for the funcitonal test:
+*Build
+npm run build
+
+*Unit Tests
+npm test
+
+*Start Application
+npm start
+
+
 sudo npm install nightwatch -g
 
 To Start the application issue the following command:

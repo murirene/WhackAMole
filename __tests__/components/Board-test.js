@@ -1,13 +1,17 @@
-jest.dontMock('../../src/js/components/Board.jsx').default;
-jest.dontMock('../../src/js/components/Mole.jsx').default;
+/* Jest Tests for validating the React Board. The View component of the Redux
+ * unidirectional flow */
+
+jest.dontMock('../../src/js/components/Board').default;
+jest.dontMock('../../src/js/components/Mole').default;
+import consts from '../../src/js/lib/constants';
 
 var TestUtils = require('react-addons-test-utils');
 var React = require('react');
 
 describe("The Board", () => {
-   it("should display the board with moles", () => {
-       let Board = require('../../src/js/components/Board.jsx').default;
-       let moles=['hid', 'hid', 'hid'];
+   it("should display game with moles", () => {
+       let Board = require('../../src/js/components/Board').default;
+       let moles = Array(consts.NUMBER_OF_MOLES).fill(consts.moleState.HIDDEN);
 
        let BoardComponent = TestUtils.renderIntoDocument(
            <Board moles={moles}/>

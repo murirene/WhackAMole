@@ -1,3 +1,5 @@
+/* Mole React Component represents the Mole in  it's Peeking, Hidden, Whacked, or Recovery state */
+
 import React from 'react';
 import consts from '../lib/constants';
 

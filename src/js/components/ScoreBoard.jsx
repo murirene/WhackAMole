@@ -1,3 +1,5 @@
+/* ScoreBoard React Component Shows the players score. */
+
 import React from 'react';
 
 let ScoreBoard = React.createClass({

@@ -5,9 +5,9 @@
 
   <testsuite name="WhackAMole"
     errors="0" failures="0" hostname="" id="" package="WhackAMole" skipped="0"
-    tests="1" time="15.98" timestamp="Mon, 18 Apr 2016 05:19:31 GMT">
+    tests="1" time="13.34" timestamp="Mon, 18 Apr 2016 18:15:41 GMT">
   
-    <testcase name="Play Whack A Mole" time="15.98" assertions="22">
+    <testcase name="Play Whack A Mole" time="13.34" assertions="22">
 
     
 

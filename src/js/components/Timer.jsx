@@ -1,3 +1,5 @@
+/* Timer React Component dispatches a random mole movement every 100ms. */
+
 import React from 'react';
 
 let Timer = React.createClass({

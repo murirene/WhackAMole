@@ -1,3 +1,4 @@
+/* Board React Component is used to contain the Moles */
 import React from 'react';
 import Mole from '../components/Mole';
 

@@ -1,3 +1,4 @@
+/* High level React View Component is smarter and aggregates lower level React components. */
 require('normalize.css/normalize.css');
 require('../styles/App.css');
 import React from 'react';

@@ -1,3 +1,4 @@
+/* TimeKeeper React Component maintains the play clock and shows the score every 3 seconds */
 import React from 'react';
 import { Input } from 'react-bootstrap';
 

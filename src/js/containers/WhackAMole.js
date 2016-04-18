@@ -1,3 +1,5 @@
+/* React Container binds the Component to the store. */
+
 import { connect } from 'react-redux';
 import { moleHide, moleOut, moleRecover, moleWhacked } from '../actions/actions';
 import WhackAMole from '../views/WhackAMole';

@@ -7,8 +7,9 @@
     "automation": "node_modules/nightwatch/bin/nightwatch",
     "test": "node_modules/jest-cli/bin/jest.js",
     "clean": "rimraf build",
+    "build": "./node_modules/gulp/bin/gulp.js",
     "build:server": "./node_modules/gulp/bin/gulp.js server",
-    "build:ui": "./node_modules/gulp/bin/gulp.js",
+    "build:ui": "./node_modules/gulp/bin/gulp.js client",
     "start": "node ./build/server.js"
   },
   "author": "",
