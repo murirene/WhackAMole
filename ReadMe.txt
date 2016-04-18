@@ -5,6 +5,9 @@ npm: 3.7.3
 *URL:
 http://localhost:3000
 
+*Git:
+https://github.com/murirene/WhackAMole.git
+
 *Dependency Installation
 Inside of the directory run the following command to install the dependencies:
 npm install
@@ -18,11 +21,11 @@ npm test
 *Start Application (open the browser to http://localhost:3000)
 npm start
 
-*Functional Test
+*Functional Test (It will expect the Mozilla browser, unless Chrome is configured in nightwatch.json)
 1. Download the Selenium Standalone Server (selenium-server-standalone-2.53.0.jar) and place it in test/bin
 http://www.seleniumhq.org/download/
 2. run "npm start" on one command window
-3. run "npm automation" on another window.
+3. run "npm run automation" on another window.
 4. The test should play the game and hit each mole.
 
 ********************
