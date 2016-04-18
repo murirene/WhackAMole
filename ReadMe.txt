@@ -2,14 +2,14 @@ Environment:
 Node: v5.9.1
 npm: 3.7.3
 
+URL:
+http://localhost:3000/
+
 Inside of the directory run the following command to install the dependencies:
 npm install
 
 Also, install Nightwatch.js for the funcitonal test:
 sudo npm install nightwatch -g
-
-To Run the unit tests issue the following command:
-npm test
 
 To Start the application issue the following command:
 npm start
@@ -67,7 +67,7 @@ Stores
 State
     game: game status (play/stop)
     moles: Array of Moles and State (hid, out, hit)
-    hits: Moles hit
+    hits: #'s of Moles hit
     timerId: Timer id
     gameTimer: Game Time
     gameTimerId: Game Timer id
